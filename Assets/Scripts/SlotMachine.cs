@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class SlotMachine : MonoBehaviour
 {
+    [SerializeField] GameObject interactText;
+
     int chosenNumber;
     bool canInteract;
 
@@ -16,6 +18,7 @@ public class SlotMachine : MonoBehaviour
         randomizeAction = InputSystem.actions.FindAction("Interact");
 
         inactiveSprite = spriteRenderer.sprite;
+        interactText.SetActive(false);
     }
 
     private void Update()
@@ -41,6 +44,8 @@ public class SlotMachine : MonoBehaviour
 
     void Interact()
     {
+        interactText.SetActive(canInteract);
+
         if (randomizeAction.WasPressedThisFrame() && canInteract)
         {
             chosenNumber = RandomNumber();
