@@ -7,11 +7,15 @@ public class SlotMachine : MonoBehaviour
     bool canInteract;
 
     InputAction randomizeAction;
+    SpriteRenderer spriteRenderer;
+    Sprite inactiveSprite;
 
     private void Start()
     {
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         randomizeAction = InputSystem.actions.FindAction("Interact");
-        Debug.Log(randomizeAction);
+
+        inactiveSprite = spriteRenderer.sprite;
     }
 
     private void Update()
@@ -45,6 +49,12 @@ public class SlotMachine : MonoBehaviour
             Collider2D col = GetComponent<Collider2D>();
             col.enabled = false;
             canInteract = false;
+
+            Animator animator = GetComponent<Animator>();
+            animator.enabled = false;
+
+            SpriteRenderer spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+            spriteRenderer.sprite = inactiveSprite;
 
             CheckResult();
         }

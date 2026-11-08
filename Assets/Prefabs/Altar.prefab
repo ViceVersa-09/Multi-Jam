@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae05dc0c9ed04240be1841d14344ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SlotMachine
+  inactiveSprite: {fileID: -8527002166660407860, guid: 41109b4f272afab4cbb8a481388f30ae, type: 3}
 --- !u!58 &6744264507426526596
 CircleCollider2D:
   m_ObjectHideFlags: 0

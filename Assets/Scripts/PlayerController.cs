@@ -41,6 +41,6 @@ public class PlayerController : MonoBehaviour
 
     bool GroundCheck()
     {
-        return Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, groundLayer); ;
+        return Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, groundLayer);
     }
 }
