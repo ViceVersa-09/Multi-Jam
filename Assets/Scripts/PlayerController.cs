@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float groundCheckDistance;
     [SerializeField] LayerMask groundLayer;
 
+    [HideInInspector] public bool canControl;
+
     Rigidbody2D rb;
     InputAction moveAction;
     InputAction jumpAction;
@@ -21,7 +23,10 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        Move();
+        if (canControl)
+        {
+            Move();
+        }
     }
 
     void Move()
