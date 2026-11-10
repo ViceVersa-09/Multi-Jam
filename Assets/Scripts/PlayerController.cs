@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float groundCheckDistance;
     [SerializeField] LayerMask groundLayer;
 
-    [HideInInspector] public bool canControl;
+    [HideInInspector] public bool canControl = true;
 
     Rigidbody2D rb;
     InputAction moveAction;
