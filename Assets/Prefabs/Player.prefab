@@ -47,12 +47,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c5c44c57aa3bf4da9a241764c793e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  moveSpeed: 5
-  jumpHeight: 8
+  moveSpeed: 6
+  jumpHeight: 13
   groundCheckDistance: 1
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  canControl: 0
 --- !u!212 &2697494496826432585
 SpriteRenderer:
   serializedVersion: 3
@@ -128,7 +129,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

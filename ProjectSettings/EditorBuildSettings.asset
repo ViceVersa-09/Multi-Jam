@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Other scenes/PuzzleGame.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/Hub.unity
+    guid: f077d9fabbcd4334bacb2d14701ce6eb
+  - enabled: 1
+    path: Assets/Scenes/Labyrinth.unity
+    guid: ca22c0d4e966eac46872ea13be69e236
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

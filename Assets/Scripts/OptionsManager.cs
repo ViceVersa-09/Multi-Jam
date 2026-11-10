@@ -21,8 +21,6 @@ public class OptionsManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
-        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
